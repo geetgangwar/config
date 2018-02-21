@@ -1,0 +1,9 @@
+eureka:  
+  #client:
+    #serviceUrl:
+      #defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka/
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
