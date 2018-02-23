@@ -1,4 +1,4 @@
 spring:
   profiles: cloud
   
-status: suspend
+status: active
